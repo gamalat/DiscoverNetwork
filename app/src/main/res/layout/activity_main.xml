@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/onOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="88dp"
+        android:text="Wifi"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="84dp" />
+
+    <Button
+        android:id="@+id/discover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/onOff"
+        android:layout_marginEnd="56dp"
+        android:text="discover"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="56dp" />
+
+    <ListView
+        android:id="@+id/peerListView"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/onOff"
+        android:background="#f1eeee"
+        android:layout_marginTop="25dp" />
+
+
+
+    <TextView
+        android:id="@+id/connectionStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:text="Connection Status"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        android:textStyle="italic"
+         />
+</RelativeLayout>
